@@ -3,10 +3,10 @@ package com.example;
 import java.util.List;
 
 public class UseCache {
-	@SuppressWarnings("unused")
+	@SuppressWarnings({ "unused", "removal" })
 	public static void main(String[] args) {
 		// https://openjdk.org/projects/valhalla/
-		
+		Integer i= new Integer(12);
 		// int array: 12B (Object Header) + 4B + 24B = 40B
 		int[] numbers = {1,2,3,4,5,6}; // 1 | 2 | 3 | 4 ...
 		// 12B + 4B + 4B + ... = 36B
